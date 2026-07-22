@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+<<<<<<< HEAD
 // In-memory database (tạm thời)
 let appointments = [];
 
@@ -108,3 +109,31 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+=======
+// Get all appointments
+router.get('/', (req, res) => {
+  res.json({ message: 'Get all appointments' });
+});
+
+// Get appointment by ID
+router.get('/:id', (req, res) => {
+  res.json({ message: 'Get appointment by ID' });
+});
+
+// Create appointment
+router.post('/', (req, res) => {
+  res.json({ message: 'Create appointment' });
+});
+
+// Update appointment
+router.put('/:id', (req, res) => {
+  res.json({ message: 'Update appointment' });
+});
+
+// Cancel appointment
+router.delete('/:id', (req, res) => {
+  res.json({ message: 'Cancel appointment' });
+});
+
+module.exports = router;
+>>>>>>> 760db569e65aa36bd14bff3a9d6899c62a6b0587

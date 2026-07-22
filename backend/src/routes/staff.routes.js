@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+<<<<<<< HEAD
 let staff = [];
 
 router.get('/', (req, res) => {
@@ -37,3 +38,26 @@ router.post('/', (req, res) => {
 });
 
 module.exports = router;
+=======
+// Get all staff
+router.get('/', (req, res) => {
+  res.json({ message: 'Get all staff' });
+});
+
+// Get staff by ID
+router.get('/:id', (req, res) => {
+  res.json({ message: 'Get staff by ID' });
+});
+
+// Create staff
+router.post('/', (req, res) => {
+  res.json({ message: 'Create staff' });
+});
+
+// Update staff
+router.put('/:id', (req, res) => {
+  res.json({ message: 'Update staff' });
+});
+
+module.exports = router;
+>>>>>>> 760db569e65aa36bd14bff3a9d6899c62a6b0587

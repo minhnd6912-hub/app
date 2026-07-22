@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+<<<<<<< HEAD
 // POST login
 router.post('/login', (req, res) => {
   const { email, password } = req.body;
@@ -39,3 +40,16 @@ router.post('/register', (req, res) => {
 });
 
 module.exports = router;
+=======
+// Login
+router.post('/login', (req, res) => {
+  res.json({ message: 'Login endpoint' });
+});
+
+// Register
+router.post('/register', (req, res) => {
+  res.json({ message: 'Register endpoint' });
+});
+
+module.exports = router;
+>>>>>>> 760db569e65aa36bd14bff3a9d6899c62a6b0587
